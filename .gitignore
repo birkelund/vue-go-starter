@@ -1,4 +1,5 @@
 vendor/
+statik/
 
 # binaries
 vue-go-starter

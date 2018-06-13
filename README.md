@@ -8,3 +8,7 @@ This example requires yarn, go and statik.
 ## Building
 
     make
+
+## Running
+
+Run the `vue-go-starter` binary and visit http://localhost:8080.
