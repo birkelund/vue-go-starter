@@ -1,8 +1,11 @@
-.PHONY: build-deps deps all clean build
+.PHONY: build-deps deps all clean build dev
 
 YARN := $(shell command -v yarn 2> /dev/null)
 
 all: build-deps deps build
+
+dev: 
+	yarn serve
 
 build-deps:
 ifndef YARN

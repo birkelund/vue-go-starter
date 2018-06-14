@@ -1,10 +1,14 @@
-.PHONY: all clean
-.PHONY: apiserver ui
+.PHONY: all clean dev
+.PHONY: apiserver ui 
 
 DEP := $(shell command -v dep 2> /dev/null)
 STATIK := $(shell command -v statik 2> /dev/null)
 
+
 all: apiserver
+
+dev:
+	go run main.go -http=:4000
 
 ui:
 	$(MAKE) -C ui
