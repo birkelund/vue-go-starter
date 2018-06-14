@@ -27,6 +27,7 @@ clean:
 	rm -f vue-go-starter
 	$(MAKE) -C ui clean
 
-cleanall:
+cleanall: clean
 	rm -rf statik
+	rm -rf vendor
 	$(MAKE) -C ui cleanall

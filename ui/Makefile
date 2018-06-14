@@ -2,7 +2,6 @@
 
 YARN := $(shell command -v yarn 2> /dev/null)
 
-
 all: build-deps deps build
 
 build-deps:
@@ -12,6 +11,7 @@ endif
 
 deps:
 	yarn
+
 build:
 	yarn build
 
